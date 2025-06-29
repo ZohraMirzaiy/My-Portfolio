@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zohra Mirzaiy - Creative Developer & Designer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <div class="global-floating-shapes">
+        <span class="floating-shape shape1">&lt;/&gt;</span>
+        <span class="floating-shape shape2">{ }</span>
+        <span class="floating-shape shape3">&lt;h1&gt;</span>
+        <span class="floating-shape shape4">;</span>
+        <span class="floating-shape shape5">/</span>
+        <span class="floating-shape shape6">&lt;div&gt;</span>
+        <span class="floating-shape shape7">&#123; &#125;</span>
+        <span class="floating-shape shape8">&lt; / &gt;</span>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">
+                    <span class="logo-text">ZM</span>
+                    <div class="logo-dot"></div>
+                </a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active" data-section="home">
+                    <i class="fas fa-home"></i>Home
+                </a></li>
+                <li><a href="#about" class="nav-link" data-section="about">
+                    <i class="fas fa-user"></i>About
+                </a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">
+                    <i class="fas fa-code"></i>Projects
+                </a></li>
+                <li><a href="#testimonials" class="nav-link" data-section="testimonials">
+                    <i class="fas fa-quote-left"></i>Testimonials
+                </a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">
+                    <i class="fas fa-envelope"></i>Contact
+                </a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-video-overlay"></div>
+        <!-- Optional Video Background -->
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4" type="video/mp4">
+        </video>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="typewriter-animated">
+                        <span class="word">Hi!</span> <span class="word">I</span> <span class="word">am</span> <span class="word">Zohra</span> <span class="word">Mirzaiy</span>
+                    </span>
+                    <div class="hero-signature">ZM</div>
+                </h1>
+                <div class="hero-role animated-role">Creative Developer & Designer</div>
+                <p class="hero-subtitle">
+                    I blend creativity with technology to build meaningful digital solutions. 
+                    Currently studying at George Brown College in Canada and American University of Afghanistan online.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-paper-plane"></i>Let's Talk
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="15">0</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="3">0</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="100">0</span>
+                        <span class="stat-label">% Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image-container">
+                    <div class="hero-image" id="heroImage">
+                        <img src="first.jpg" alt="Zohra Mirzaiy profile photo" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+                    </div>
+                    <div class="floating-elements">
+                        <div class="floating-card card-1">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="floating-card card-3">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                    </div>
+                    <!-- Hand-drawn accent elements -->
+                    <div class="hand-drawn-accent accent-1"></div>
+                    <div class="hand-drawn-accent accent-2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-text">Scroll to explore</div>
+            <div class="scroll-arrow"></div>
+        </div>
+        <!-- Floating Contact Button -->
+        <div class="floating-contact">
+            <button class="floating-contact-btn" onclick="scrollToContact()">
+                <i class="fas fa-comments"></i>
+                <span>Let's Chat</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">My journey in the digital world</p>
+            </div>
+            <div class="about-content">
+                <div class="about-intro">
+                    <h3>Zohra Mirzaiy</h3>
+                    <p class="about-tagline">Passionate about creating digital experiences that matter</p>
+                    <div class="about-story">
+                        <p>
+                            Hey there! I'm Zohra, a creative developer and designer who believes in the power of thoughtful design and clean code. 
+                            My journey started with curiosity and has evolved into a passion for building digital solutions that not only look great 
+                            but also solve real problems.
+                        </p>
+                        <p>
+                            Currently, I'm pursuing my education at <strong>George Brown College in Canada</strong> and doing my batchelor degree online at the 
+                            <strong>American University of Afghanistan</strong>. This unique combination allows me to blend international perspectives 
+                            with local insights, creating designs that resonate globally while staying culturally relevant.
+                        </p>
+                    </div>
+                    
+                    <!-- My Values Section -->
+                    <div class="my-values">
+                        <h4>What Drives Me:</h4>
+                        <div class="values-grid">
+                            <div class="value-item">
+                                <div class="value-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="value-content">
+                                    <h5>Empathy</h5>
+                                    <p>Understanding user needs and emotions</p>
+                                </div>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <div class="value-content">
+                                    <h5>Innovation</h5>
+                                    <p>Pushing boundaries and exploring new ideas</p>
+                                </div>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-icon">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <div class="value-content">
+                                    <h5>Cultural Bridge</h5>
+                                    <p>Connecting global and local perspectives</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-skills">
+                        <h4>What I bring to the table:</h4>
+                        <div class="skills-tags">
+                            <span class="skill-tag">UI/UX Design</span>
+                            <span class="skill-tag">Frontend Development</span>
+                            <span class="skill-tag">Responsive Design</span>
+                            <span class="skill-tag">Creative Problem Solving</span>
+                            <span class="skill-tag">Cross-cultural Design</span>
+                            <span class="skill-tag">User Research</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-image-container">
+                        <div class="about-image" id="aboutImage">
+                            <img src="second.jpg" alt="Zohra Mirzaiy about photo" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+                        </div>
+                        <div class="about-decoration">
+                            <div class="decoration-line"></div>
+                            <div class="decoration-dots"></div>
+                        </div>
+                        <!-- Sticky note effect -->
+                        <div class="sticky-note">
+                            <p>"Design with purpose, code with passion"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">A showcase of my best work and creative project</p>
+            </div>
+            
+            <!-- George Brown College Projects -->
+            <div class="project-category">
+                <h3 class="category-title">
+                    <i class="fas fa-graduation-cap"></i>
+                    George Brown College Projects
+                </h3>
+                
+                <!-- Featured GBC Project -->
+                <div class="featured-project">
+                    <div class="featured-project-content">
+                        <div class="featured-project-info">
+                            <div class="project-badge">Featured GBC Project</div>
+                            <h3>Responsive Portfolio Website</h3>
+                            <p class="project-challenge">
+                                <strong>Challenge:</strong> Create a modern, accessible portfolio that showcases both technical skills and creative vision while maintaining cultural sensitivity.
+                            </p>
+                            <p class="project-solution">
+                                <strong>Solution:</strong> Developed a responsive, interactive portfolio with sophisticated neutral colors, smooth animations, and cross-cultural design principles.
+                            </p>
+                            <div class="project-tech-stack">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Responsive Design</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link-btn">
+                                    <i class="fas fa-external-link-alt"></i>Live Demo
+                                </a>
+                                <a href="#" class="project-link-btn">
+                                    <i class="fab fa-github"></i>View Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="featured-project-visual">
+                            <div class="project-mockup">
+                                <img src="first.jpg" alt="Portfolio Website Mockup" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GBC Projects Grid -->
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <h4>Student Portal UI</h4>
+                                    <p>Clean, user-friendly portal for course management</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Figma</span>
+                                        <span class="tech-tag">Prototyping</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h4>Student Portal UI</h4>
+                                <span class="project-category-tag">UI/UX</span>
+                            </div>
+                            <p class="project-description">Designed a clean, user-friendly portal for students to manage courses and grades with intuitive navigation.</p>
+                            <div class="project-links-small">
+                                <a href="#" class="project-link-small">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <h4>Event Management App</h4>
+                                    <p>Mobile app for organizing campus events</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">React Native</span>
+                                        <span class="tech-tag">Firebase</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h4>Event Management App</h4>
+                                <span class="project-category-tag">Mobile App</span>
+                            </div>
+                            <p class="project-description">Created a mobile app concept for organizing and tracking campus events with real-time updates.</p>
+                            <div class="project-links-small">
+                                <a href="#" class="project-link-small">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <h4>Library Search Tool</h4>
+                                    <p>Advanced search system for academic resources</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">Django</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h4>Library Search Tool</h4>
+                                <span class="project-category-tag">Web App</span>
+                            </div>
+                            <p class="project-description">Developed an advanced search tool for students to easily find and access library resources.</p>
+                            <div class="project-links-small">
+                                <a href="#" class="project-link-small">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <h4>Team Collaboration Board</h4>
+                                    <p>Digital task management system</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">React</span>
+                                        <span class="tech-tag">Node.js</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h4>Team Collaboration Board</h4>
+                                <span class="project-category-tag">Collaboration</span>
+                            </div>
+                            <p class="project-description">A digital board for group projects, allowing easy task assignment and real-time tracking.</p>
+                            <div class="project-links-small">
+                                <a href="#" class="project-link-small">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <h4>Online Course Landing Page</h4>
+                                    <p>Modern landing page for educational content</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">HTML/CSS</span>
+                                        <span class="tech-tag">JavaScript</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h4>Online Course Landing Page</h4>
+                                <span class="project-category-tag">Landing Page</span>
+                            </div>
+                            <p class="project-description">Designed a landing page for an online course with clear CTAs and modern visuals.</p>
+                            <div class="project-links-small">
+                                <a href="#" class="project-link-small">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <h4>Data Analytics Dashboard</h4>
+                                    <p>Interactive dashboard for student performance</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Tableau</span>
+                                        <span class="tech-tag">SQL</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h4>Data Analytics Dashboard</h4>
+                                <span class="project-category-tag">Data Analytics</span>
+                            </div>
+                            <p class="project-description">Created an interactive dashboard for analyzing student performance and academic trends.</p>
+                            <div class="project-links-small">
+                                <a href="#" class="project-link-small">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- American University of Afghanistan Projects -->
+            <div class="project-category">
+                <h3 class="category-title">
+                    <i class="fas fa-laptop"></i>
+                    American University of Afghanistan Projects
+                </h3>
+                
+                <!-- Featured AUAF Project -->
+                <div class="featured-project">
+                    <div class="featured-project-content">
+                        <div class="featured-project-info">
+                            <div class="project-badge">Featured AUAF Project</div>
+                            <h3>Virtual Study Platform</h3>
+                            <p class="project-challenge">
+                                <strong>Challenge:</strong> Create an online platform that enables remote learning and collaboration for students in Afghanistan, considering connectivity limitations.
+                            </p>
+                            <p class="project-solution">
+                                <strong>Solution:</strong> Developed a lightweight, accessible platform with offline capabilities and low-bandwidth optimization for virtual study groups.
+                            </p>
+                            <div class="project-tech-stack">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">WebRTC</span>
+                                <span class="tech-tag">PWA</span>
+                                <span class="tech-tag">Offline First</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link-btn">
+                                    <i class="fas fa-external-link-alt"></i>Live Demo
+                                </a>
+                                <a href="#" class="project-link-btn">
+                                    <i class="fab fa-github"></i>View Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="featured-project-visual">
+                            <div class="project-mockup">
+                                <img src="second.jpg" alt="Virtual Study Platform Mockup" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AUAF Projects Grid -->
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <h4>Language Learning App</h4>
+                                    <p>Interactive vocabulary practice</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">JavaScript</span>
+                                        <span class="tech-tag">LocalStorage</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h4>Language Learning App</h4>
+                                <span class="project-category-tag">Education</span>
+                            </div>
+                            <p class="project-description">A mini-app for practicing vocabulary and language skills with gamified learning elements.</p>
+                            <div class="project-links-small">
+                                <a href="#" class="project-link-small">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <h4>Cultural Exchange Platform</h4>
+                                    <p>Connecting students across borders</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">React</span>
+                                        <span class="tech-tag">Firebase</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h4>Cultural Exchange Platform</h4>
+                                <span class="project-category-tag">Social Platform</span>
+                            </div>
+                            <p class="project-description">A platform for students to connect, share cultural experiences, and learn from each other globally.</p>
+                            <div class="project-links-small">
+                                <a href="#" class="project-link-small">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What People Say</h2>
+                <p class="section-subtitle">Feedback from clients and collaborators</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card featured-testimonial">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"Zohra's attention to detail and understanding of user needs is exceptional. She transformed our vision into a beautiful, functional design that exceeded our expectations."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <span>Product Manager, TechCorp</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-accent"></div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Working with Zohra was a pleasure. Her creative approach and technical skills helped us create a stunning website that perfectly represents our brand."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <span>Founder, StartupXYZ</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Zohra's cultural sensitivity and design expertise made our international project a success. She understands how to bridge different perspectives through design."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Fatima Al-Zahra</h4>
+                            <span>Director, Global Education Initiative</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card featured-testimonial">
+                    <div class="testimonial-content">
+                        <p>"Zohra's technical skills combined with her creative vision resulted in a website that perfectly captures our brand essence. Her attention to detail is outstanding."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>David Rodriguez</h4>
+                            <span>Creative Director, Design Studio</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-accent"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Ready to bring your ideas to life? Let's work together!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-intro">
+                    <h3>Get in Touch</h3>
+                    <p>
+                        I'm always excited to hear about new projects and opportunities. Whether you have a specific project in mind 
+                        or just want to chat about design and development, I'd love to hear from you!
+                    </p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-details">
+                                <h4>Email</h4>
+                                <a href="mailto:zohra.mirzaiy@example.com">zohra.mirzaiy@example.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-details">
+                                <h4>Location</h4>
+                                <p>Toronto, Canada</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="method-details">
+                                <h4>Availability</h4>
+                                <p>Available for freelance projects</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <h4>Follow My Work</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="X (Twitter)">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Zohra Mirzaiy</h3>
+                    <p>Creating digital experiences that inspire and connect</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="X (Twitter)"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Zohra Mirzaiy. Made with <i class="fas fa-heart"></i> and lots of coffee.</p>
+                <p>Designed & Developed with passion</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
